@@ -6,6 +6,10 @@
     color:#E1021A !important;
 }
 
+#notice {
+    padding: 0.5rem 0;
+}
+
 .main{
     .container{
         scroll-margin-top: 150px;
@@ -112,8 +116,9 @@
         }
     }
 
-    #coursesRoot {
-        .courses-card {
+    #coursesRoot,
+    #tutorialsRoot {
+        .flex-card {
             display: flex;
             flex-direction: column;
             min-height: 100%;
@@ -122,23 +127,15 @@
                 flex: 1;
             }
 
-            .courses-description {
+            .card-summary {
                 margin: 1rem 0;
             }
 
-            .courses-programs {
+            .card-tags {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 8px;
                 margin-top: 1rem;
-            }
-
-            .courses-program-chip {
-                border: 1px solid #d6d6d6;
-                border-radius: 999px;
-                font-size: 0.85rem;
-                line-height: 1.2rem;
-                padding: 4px 10px;
             }
 
             .card-action {
